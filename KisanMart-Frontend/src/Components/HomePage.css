@@ -1,0 +1,85 @@
+.homecarousel{
+    height: 25%;
+}
+.bgg_about {
+ 
+    height: 15vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+ 
+  .dynamicc_text h1{
+    position: relative;
+   animation: slide 4s steps(210) infinite;
+  }
+  @keyframes slide {
+    100%{
+        
+    }
+    
+  }
+
+  .dynamicc_text{
+    position: relative;
+  background-color: white
+   
+    
+  }
+
+  .dynamicc_text h1::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    animation: typing 4s steps(210) infinite;
+  }
+  @keyframes typing {
+    100%{
+        left:100%;
+        margin: 0 -75x 0 75px;
+    }
+    
+  }
+.carousel-caption {
+    bottom: 150px;
+    z-index: 1;
+ 
+}
+
+.carousel-inner{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    text-align: left;
+}
+.carousel-caption h1{
+    font-size: 75px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    text-align: left;
+}
+.carousel-caption p{
+    letter-spacing: 2px;
+    margin-top: 25px;
+    text-align: left;
+}
+.d-block{
+    filter: brightness(30%);
+}

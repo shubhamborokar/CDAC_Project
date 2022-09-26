@@ -1,0 +1,54 @@
+.bg_about {
+ 
+    height: 18vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .img1{
+    height: 300px;
+    width: 300px;
+    align-items: center;
+  }
+  .main{
+    background: rgb(246, 242, 8);
+  }
+ 
+  .dynamic_text h1{
+    position: relative;
+   animation: slide 6s steps(210) infinite;
+  }
+  @keyframes slide {
+    100%{
+        
+    }
+    
+  }
+
+  .dynamic_text{
+    position: relative;
+  background-color: #b1a8a8;
+   
+   
+    
+  }
+
+  .dynamic_text h1::after{
+    content: "";
+    position: absolute;
+    background-color: #b1a8a8;
+    
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    animation: typing 6s steps(210) infinite;
+  }
+  @keyframes typing {
+    100%{
+        left:100%;
+        margin: 0 -75x 0 75px;
+    }
+    
+  }
